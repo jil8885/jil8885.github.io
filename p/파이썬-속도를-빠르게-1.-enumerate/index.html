@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko-kr"><head>
     <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Junior Developer who wants to be a backend developer'><title>About Me</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Enumerate를 사용하여 반복문을 빠르게 다뤄보자.'><title>파이썬 속도를 빠르게 - 1. Enumerate</title>
     
-    <link rel='canonical' href='https://jil8885.github.io/about-me/'>
+    <link rel='canonical' href='https://jil8885.github.io/p/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%86%8D%EB%8F%84%EB%A5%BC-%EB%B9%A0%EB%A5%B4%EA%B2%8C-1.-enumerate/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='About Me'>
-<meta property='og:description' content='Junior Developer who wants to be a backend developer'>
-<meta property='og:url' content='https://jil8885.github.io/about-me/'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='파이썬 속도를 빠르게 - 1. Enumerate'>
+<meta property='og:description' content='Enumerate를 사용하여 반복문을 빠르게 다뤄보자.'>
+<meta property='og:url' content='https://jil8885.github.io/p/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%86%8D%EB%8F%84%EB%A5%BC-%EB%B9%A0%EB%A5%B4%EA%B2%8C-1.-enumerate/'>
 <meta property='og:site_name' content='dotPy의 일기장'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:published_time' content='2020-10-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-10-21T10:01:00&#43;09:00'/>
-<meta name="twitter:title" content="About Me">
-<meta name="twitter:description" content="Junior Developer who wants to be a backend developer"></head><body class="article-page keep-sidebar">
-        <div class="container flex on-phone--column align-items--flex-start extended ">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='python' /><meta property='article:tag' content='optimize' /><meta property='article:published_time' content='2020-10-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-10-21T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="파이썬 속도를 빠르게 - 1. Enumerate">
+<meta name="twitter:description" content="Enumerate를 사용하여 반복문을 빠르게 다뤄보자."></head><body class="">
+        <div class="container flex on-phone--column align-items--flex-start extended article-page with-toolbar">
             <aside class="sidebar left-sidebar sticky">
     <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
         <span class="hamburger-box">
@@ -62,7 +62,7 @@
         
         
 
-        <li  class='current' >
+        <li >
             <a href='https://jil8885.github.io/about-me'>
                 
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -100,19 +100,40 @@
     </ol>
 </aside>
             <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://jil8885.github.io" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
     <article class="main-article">
     <header class="article-header">
 
     <div class="article-details">
     
+    <header class="article-category">
+        
+            
+                <a href="https://jil8885.github.io/categories/python/">Python</a>
+            
+        
+    </header>
+    
 
     <h2 class="article-title">
-        <a href="https://jil8885.github.io/about-me/">About Me</a>
+        <a href="https://jil8885.github.io/p/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%86%8D%EB%8F%84%EB%A5%BC-%EB%B9%A0%EB%A5%B4%EA%B2%8C-1.-enumerate/">파이썬 속도를 빠르게 - 1. Enumerate</a>
     </h2>
 
     
     <h3 class="article-subtitle">
-        Junior Developer who wants to be a backend developer
+        Enumerate를 사용하여 반복문을 빠르게 다뤄보자.
     </h3>
     <footer class="article-time">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -123,117 +144,63 @@
 
 
 
-        <time class="article-time--published">2020년 10월 20일</time>
+        <time class="article-time--published">2020년 10월 21일</time>
     </footer></div>
 </header>
 
     <section class="article-content">
-    <p>한양대학교 ERICA 캠퍼스에서 소프트웨어 전공중인 학생입니다.
-Python을 이용한 몇몇 프로젝트와 회사에서 MariaDB를 이용한 데이터베이스 구축 및 클라이언트 개발을 맡고 있습니다.</p>
-<p><strong>Experiences</strong></p>
-<ul>
-<li>
-<p>교내 HEPC 대회 참가</p>
-<ul>
-<li>2017년 1학기, 2018년 2학기</li>
-</ul>
-</li>
-<li>
-<p>교내 Software-Up 경진대회 참가</p>
-<ul>
-<li>2017년 2학기</li>
-</ul>
-</li>
-<li>
-<p>카카오 i 오픈빌더를 이용한 카카오톡 챗봇 서비스 운영</p>
-<ul>
-<li>2017.12 ~</li>
-<li>4.2K Users</li>
-<li><a class="link" href="https://github.com/jil8885/fastapi-kakao-i-hanyang"  target="_blank" rel="noopener"
-    >Repo</a></li>
-</ul>
-</li>
-<li>
-<p>사내 데이터베이스 구축, 설계 및 클라이언트 개발</p>
-<ul>
-<li>2020.08~</li>
-<li>Database powered by MariaDB</li>
-<li>Client powered by Python3 with QT framework</li>
-</ul>
-</li>
-</ul>
-<p><strong>Projects</strong></p>
-<ul>
-<li>
-<p>휴아봇</p>
-<ul>
-<li><a class="link" href="https://github.com/jil8885/fastapi-kakao-i-hanyang"  target="_blank" rel="noopener"
-    >Repo</a></li>
-<li><a class="link" href="https://pf.kakao.com/_MkFlC"  target="_blank" rel="noopener"
-    >Home</a></li>
-<li>교내 카카오 i 오픈빌더 챗봇</li>
-</ul>
-</li>
-<li>
-<p>OpenTTD JGR</p>
-<ul>
-<li><a class="link" href="https://github.com/jil8885/OpenTTD-JGR-patchpack"  target="_blank" rel="noopener"
-    >Repo</a></li>
-<li><a class="link" href="https://play.google.com/store/apps/details?id=org.openttd.jgrpp"  target="_blank" rel="noopener"
-    >Store</a></li>
-<li>오픈소스 교통 시뮬레이션 게임 Android 포팅</li>
-</ul>
-</li>
-</ul>
-<p><strong>Article</strong></p>
-<ul>
-<li>이정인 학생, 대학생활의 편리함을 더해주는 &lsquo;휴아봇&rsquo; 개발자
-<ul>
-<li><a class="link" href="http://www.hanyang.ac.kr/surl/7OxcB"  target="_blank" rel="noopener"
-    >Link</a></li>
-</ul>
-</li>
-</ul>
-<p><strong>Awards</strong></p>
-<ul>
-<li>
-<p>한양대 ERICA HEPC 경진대회 장려상</p>
-<ul>
-<li>2017년 1학기</li>
-</ul>
-</li>
-<li>
-<p>한양대 ERICA Software-Up 경진대회 최우수상</p>
-<ul>
-<li>2017년 2학기</li>
-</ul>
-</li>
-</ul>
+    <p>저는 회사에서 데이터베이스에 자료를 저장하고, 가공해서 결과물을 만드는 업무를 맡고 있습니다</p>
+<p>하지만 기존 자료는 엑셀 파일이 대다수이기 때문에 python과 openpyxl을 조합한 코드가 많죠</p>
+<p>보통 사무실에서는 자료를 깔끔해보이기 위한 헤더를 엑셀에 만들어놓아 자료를 입출력하거나 가공하는 입장에서는 해당 행,렬에 대한 예외처리가 필수적입니다</p>
+<p>특정 헤더를 제외하고 자료로 활용하기 위해서는 이전엔 다음과 같은 코드를 활용했습니다</p>
+<p>시트 내 첫 두 행이 헤더라고 가정하겠습니다</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># openpyxl를 import하여, workbook, worksheet을 load하는 부분을 생략하겠습니다.</span>
+<span class="n">row_index</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">rows</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">row_index</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="c1"># 해당 row를 가공하는 구문들</span>
+    <span class="n">row_index</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div><p>Enumerate에서는 List와 같이 iterate object(반복 객체)를 인자로 받아 아래와 같이 해당 항목에 대한 index를 같이 반환해줍니다.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">list_test</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;철수&#39;</span><span class="p">,</span> <span class="s1">&#39;영희&#39;</span><span class="p">,</span> <span class="s1">&#39;민수&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">list_test</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">test@console:~$ python3 test.py
+<span class="m">0</span> <span class="s1">&#39;철수&#39;</span>
+<span class="m">1</span> <span class="s1">&#39;영희&#39;</span>
+<span class="m">2</span> <span class="s1">&#39;민수&#39;</span>
+</code></pre></div><p>이제 enumerate를 이전과 같이 worksheet에 적용하면 어떻게 될까요?</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># openpyxl를 import하여, workbook, worksheet을 load하는 부분을 생략하겠습니다.</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">rows</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">index</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="c1"># 해당 row를 가공하는 구문들</span>
+</code></pre></div><p>코드에서 index를 위해 만들어둔 변수가 더이상 필요없음을 알 수 있습니다.</p>
 
 </section>
 
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="https://jil8885.github.io/tags/python/">python</a>
+        
+            <a href="https://jil8885.github.io/tags/optimize/">optimize</a>
+        
+    </section>
 
-    <section class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
 
-
-
-        <span class="article-time--modified">
-            Last updated on 2020년 10월 21일 10시 01분
-        </span>
-    </section></footer>
+    </footer>
 
     
 </article>
 
-     
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+    
         
     <div class="disqus-container">
     <div id="disqus_thread"></div>
@@ -278,8 +245,6 @@ Python을 이용한 몇몇 프로젝트와 회사에서 MariaDB를 이용한 데
         <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
-
-    
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true" style="display:none">
 
     
@@ -342,7 +307,6 @@ Python을 이용한 몇몇 프로젝트와 회사에서 MariaDB를 이용한 데
     </div>
 
 </div>
-
             </main>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
