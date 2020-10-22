@@ -7,14 +7,14 @@ date: 2020-01-01
 published: false
 unlisted: true
 generate-card: false
-language: fr
+language: kr
 cover: ./cover.jpeg
 imageShare: ./cover.jpeg
 tags: ['fake']
 translations:
-  - link: 'https://www.maxpou.fr/about'
-    language: 'french'
-    hreflang: fr
+  - link: 'https://jil8885.github.io/about-me'
+    language: 'korean'
+    hreflang: kr
 ---
 
 This exists to populate GraphQL fields and avoid null errors. It should contain

@@ -1,42 +1,53 @@
 ---
-title: "About gatsby-starter-morning-dew"
-slug: about-gatsby-starter-morning-dew
-cover: ./gatsby-cover.png
-disqus: true
+title: "About Me"
+slug: about-me
+disqus: false
 ---
 
-[![Build Status](https://travis-ci.org/maxpou/gatsby-starter-morning-dew.svg?branch=master)](https://travis-ci.org/maxpou/gatsby-starter-morning-dew) [![Netlify Status](https://api.netlify.com/api/v1/badges/d68027bd-19b5-44fd-a2a3-d1f05fc8201e/deploy-status)](https://app.netlify.com/sites/gatsby-starter-morning-dew/deploys) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Maintainability](https://api.codeclimate.com/v1/badges/e09f1ac1a5cdb2987a6f/maintainability)](https://codeclimate.com/github/maxpou/gatsby-starter-morning-dew/maintainability) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+한양대학교 ERICA 캠퍼스에서 소프트웨어 전공중인 학생입니다.
+
+Python을 이용한 몇몇 프로젝트와 회사에서 MariaDB를 이용한 데이터베이스 구축 및 클라이언트 개발을 맡고 있습니다.
+
+**Experiences**
+
+* 교내 HEPC 대회 참가
+    + 2017년 1학기, 2018년 2학기
+
+* 교내 Software-Up 경진대회 참가
+    + 2017년 2학기
+
+* 카카오 i 오픈빌더를 이용한 카카오톡 챗봇 서비스 운영
+    + 2017.12 ~
+    + 4.2K Users
+    + [Repo](https://github.com/jil8885/fastapi-kakao-i-hanyang)
+
+* 사내 데이터베이스 구축, 설계 및 클라이언트 개발
+    + 2020.08~
+    + Database powered by MariaDB
+    + Client powered by Python3 with QT framework
 
 
-## gatsby-starter-morning-dew
+**Projects**
 
-A gatsby-starter-morning-dew is a Gatsby theme/starter to build lightning-fast websites!
+* 휴아봇
+    + [Repo](https://github.com/jil8885/fastapi-kakao-i-hanyang)
+    + [Home](https://pf.kakao.com/_MkFlC)
+    + 교내 카카오 i 오픈빌더 챗봇
 
-[Demo website.](https://maxpou.github.io/gatsby-starter-morning-dew/)
+* OpenTTD JGR
+    + [Repo](https://github.com/jil8885/OpenTTD-JGR-patchpack)
+    + [Store](https://play.google.com/store/apps/details?id=org.openttd.jgrpp)
+    + 오픈소스 교통 시뮬레이션 게임 Android 포팅
 
-![screenshot](https://i.imgur.com/Tv4SFqT.png)
+**Article**
 
+* 이정인 학생, 대학생활의 편리함을 더해주는 '휴아봇' 개발자
+    + [Link](http://www.hanyang.ac.kr/surl/7OxcB)
 
-## Features
+**Awards**
 
-- [💜 Gatsby v2](https://www.gatsbyjs.org/) / React 16
-- 🔍 SEO optimized
-- 💌 Write posts/pages in Markdown or [MDX](https://mdxjs.com/)
-  - 🎨 Code syntax highlight
-  - 📚 Multilang support (blog post)
-- 📱 Mobile Friendly (Responsive design)
-- ✨ PWA ready
-  - ✈️ Offline support
-  - 📃 Manifest support 
-- [🔧 Fully configurable (see data/siteConfig.js)](./data/siteConfig.js)
-- 💬 Disqus support
-- 💅 css-in-js (with [styled-components](https://www.styled-components.com))
-- 🧙‍♀️ Use it as a starter or [as a theme](https://www.gatsbyjs.org/blog/2018-11-11-introducing-gatsby-themes/)
-- 🔖 Groups post with tags
-- 📊 Google Analytics support
-- 🐦 post preview image generation (Twitter, Facebook)
-- 💎 Developer tools (eslint, prettier)
-- 👷 Travis CI support
+* 한양대 ERICA HEPC 경진대회 장려상
+    + 2017년 1학기
 
-
-![Lighthouse scores (locally :bowtie:)](https://lighthouse.now.sh/?perf=100&pwa=100&a11y=100&bp=100&seo=100)
+* 한양대 ERICA Software-Up 경진대회 최우수상
+    + 2017년 2학기
