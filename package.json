@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-morning-dew",
-  "version": "0.0.0-development",
-  "description": "A Gatsby theme/starter to build lightning-fast blog/websites",
+  "name": "dotpy-blog",
+  "version": "1.0.0-alpha",
+  "description": "dotPy의 잡소리가 많은 블로그입니다.",
   "keywords": [
     "blog",
     "gatsby",
@@ -9,16 +9,16 @@
     "gatsby-theme",
     "starter"
   ],
-  "homepage": "https://github.com/maxpou/gatsby-starter-morning-dew#readme",
+  "homepage": "https://github.com/jil8885/jil8885.github.io",
   "bugs": {
-    "url": "https://github.com/maxpou/gatsby-starter-morning-dew/issues"
+    "url": "https://github.com/jil8885/jil8885.github.io/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxpou/gatsby-starter-morning-dew.git"
+    "url": "https://github.com/jil8885/jil8885.github.io.git"
   },
   "license": "MIT",
-  "author": "Maxence Poutord <maxence.poutord@gmail.com>",
+  "author": "Jeongin Lee <jil8885@hanyang.ac.kr>",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
@@ -28,7 +28,8 @@
     "lh": "lighthousebot",
     "semantic-release": "semantic-release",
     "start": "gatsby develop",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "bin": {
     "generatePostPreviewImages": "./scripts/generatePostPreviewImages.js"
@@ -66,6 +67,7 @@
     "terser": "^4.6.11"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "lighthousebot": "https://github.com/GoogleChromeLabs/lighthousebot",
     "prettier": "^2.0.5",
     "puppeteer": "^1.17.0",
