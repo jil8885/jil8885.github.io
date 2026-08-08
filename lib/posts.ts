@@ -1,9 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { remark } from "remark";
-import remarkGfm from "remark-gfm";
-import html from "remark-html";
+import { renderMarkdown, type TocItem } from "@/lib/markdown";
 
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
@@ -17,6 +15,7 @@ export type PostMeta = {
 
 export type Post = PostMeta & {
   contentHtml: string;
+  toc: TocItem[];
 };
 
 function readSlugs(): string[] {
@@ -50,13 +49,22 @@ export function getAllSlugs(): string[] {
   return readSlugs();
 }
 
+export function getAllTags(): string[] {
+  const tags = new Set<string>();
+  getAllPosts().forEach((post) => post.tags.forEach((tag) => tags.add(tag)));
+  return Array.from(tags).sort();
+}
+
+export function getPostsByTag(tag: string): PostMeta[] {
+  return getAllPosts().filter((post) => post.tags.includes(tag));
+}
+
 export async function getPostBySlug(slug: string): Promise<Post> {
   const fullPath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  const processed = await remark().use(remarkGfm).use(html).process(content);
-  const contentHtml = processed.toString();
+  const { html: contentHtml, toc } = await renderMarkdown(content);
 
   return {
     slug,
@@ -65,5 +73,6 @@ export async function getPostBySlug(slug: string): Promise<Post> {
     description: data.description ?? "",
     tags: data.tags ?? [],
     contentHtml,
+    toc,
   };
 }

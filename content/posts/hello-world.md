@@ -21,3 +21,20 @@ tags: ["태그1", "태그2"]
 
 본문 내용
 ```
+
+## 코드 블록
+
+```ts
+function greet(name: string) {
+  return `Hello, ${name}!`;
+}
+```
+
+## 다이어그램
+
+```mermaid
+flowchart LR
+  A[글 작성] --> B[git push]
+  B --> C[GitHub Actions]
+  C --> D[GitHub Pages 배포]
+```

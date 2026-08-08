@@ -1,17 +1,31 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getAllPosts } from "@/lib/posts";
+import { getAllTags, getPostsByTag } from "@/lib/posts";
 
-export const metadata: Metadata = {
-  title: "포스트 | jil8885",
-};
+export async function generateStaticParams() {
+  return getAllTags().map((tag) => ({ tag }));
+}
 
-export default function PostsPage() {
-  const posts = getAllPosts();
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ tag: string }>;
+}): Promise<Metadata> {
+  const { tag } = await params;
+  return { title: `#${tag} | jil8885` };
+}
+
+export default async function TagPage({
+  params,
+}: {
+  params: Promise<{ tag: string }>;
+}) {
+  const { tag } = await params;
+  const posts = getPostsByTag(tag);
 
   return (
     <div className="flex flex-col gap-8">
-      <h1 className="text-2xl font-semibold tracking-tight">포스트</h1>
+      <h1 className="text-2xl font-semibold tracking-tight">#{tag}</h1>
       <ul className="flex flex-col gap-6">
         {posts.map((post) => (
           <li key={post.slug}>
@@ -25,18 +39,6 @@ export default function PostsPage() {
               <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
                 {post.description}
               </p>
-              {post.tags.length > 0 && (
-                <div className="mt-2 flex gap-2">
-                  {post.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full bg-neutral-100 px-2 py-0.5 text-xs text-neutral-600 dark:bg-neutral-900 dark:text-neutral-400"
-                    >
-                      #{tag}
-                    </span>
-                  ))}
-                </div>
-              )}
             </Link>
           </li>
         ))}

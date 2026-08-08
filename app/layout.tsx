@@ -16,11 +16,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "jil8885",
   description: "공부한 내용과 진행한 프로젝트를 기록하는 블로그",
+  alternates: {
+    types: { "application/rss+xml": "/feed.xml" },
+  },
 };
 
 const NAV_LINKS = [
   { href: "/", label: "홈" },
   { href: "/posts", label: "포스트" },
+  { href: "/tags", label: "태그" },
   { href: "/about", label: "소개" },
 ];
 

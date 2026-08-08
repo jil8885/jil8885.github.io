@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getAllSlugs, getPostBySlug } from "@/lib/posts";
+import { PostBody } from "@/components/PostBody";
+import { TableOfContents } from "@/components/TableOfContents";
+import { Comments } from "@/components/Comments";
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -38,20 +42,20 @@ export default async function PostPage({
         {post.tags.length > 0 && (
           <div className="flex gap-2">
             {post.tags.map((tag) => (
-              <span
+              <Link
                 key={tag}
-                className="rounded-full bg-neutral-100 px-2 py-0.5 text-xs text-neutral-600 dark:bg-neutral-900 dark:text-neutral-400"
+                href={`/tags/${tag}`}
+                className="rounded-full bg-neutral-100 px-2 py-0.5 text-xs text-neutral-600 hover:bg-neutral-200 dark:bg-neutral-900 dark:text-neutral-400 dark:hover:bg-neutral-800"
               >
                 {tag}
-              </span>
+              </Link>
             ))}
           </div>
         )}
       </header>
-      <div
-        className="prose prose-neutral max-w-none dark:prose-invert"
-        dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-      />
+      <TableOfContents toc={post.toc} />
+      <PostBody html={post.contentHtml} />
+      <Comments />
     </article>
   );
 }
