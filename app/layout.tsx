@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SITE_URL } from "@/lib/config";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,11 +15,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "jil8885",
   description: "공부한 내용과 진행한 프로젝트를 기록하는 블로그",
   alternates: {
     types: { "application/rss+xml": "/feed.xml" },
   },
+};
+
+export const viewport = {
+  themeColor: "#101114",
 };
 
 const NAV_LINKS = [
